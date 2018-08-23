@@ -7,3 +7,17 @@
     <app-order ></app-order>
 </div>
 <app-menu [links]='pageHeadLinks'></app-menu>
+<ul>
+    <li>
+        <a [routerLink]="['/login']">Home</a>
+    </li>
+    <li>
+        <a [routerLink]="['/hotels']">Hotels</a>
+    </li>
+    <li>
+      <a [routerLink]="['/history']">My Orders</a>
+    </li>
+    <li>
+        <a [routerLink]="['/register']">Register</a>
+      </li>
+  </ul>

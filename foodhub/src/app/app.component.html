@@ -27,9 +27,9 @@
   </div>
 </div> -->
 
-<div>
+<!-- <div>
     <div> <app-restaurant></app-restaurant></div>
-  </div>
+  </div> -->
 
 
 <!-- <div>
@@ -42,4 +42,23 @@
       </div>
     </div> -->
 
-  
+    <div>
+        <div>
+          <app-header></app-header>
+        </div>
+      </div>
+    <ul>
+        <li>
+            <h2><a [routerLink]="['/login']">Home</a></h2>
+        </li>
+        <li>
+            <h2><a [routerLink]="['/hotels']">Hotels</a></h2>
+        </li>
+        <li>
+          <h2><a [routerLink]="['/history']">My Orders</a></h2>
+        </li>
+        <li>
+            <h2><a [routerLink]="['/register']">Register</a></h2>
+          </li>
+      </ul>
+<router-outlet></router-outlet>
