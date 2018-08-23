@@ -8,7 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
 import {HttpClientModule, HttpClient} from '@angular/common/http';
 import { MenuComponent } from './menu/menu.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { OrderComponent } from './order/order.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
@@ -45,7 +45,7 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule, FormsModule
+    AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent],

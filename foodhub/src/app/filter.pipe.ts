@@ -24,7 +24,7 @@ export class FilterPipe implements PipeTransform {
 
     if (collection && collection.length) {
       return collection.filter(item => {
-          if (searchId && item[searchId].includes(searchId.toLowerCase()) === -1) {
+          if (searchId && collection.includes(searchId.toLowerCase()) === -1) {
               return false;
           }
           if (searchDate && collection.date.toLowerCase().indexOf(searchDate.toLowerCase()) === -1) {
@@ -39,7 +39,7 @@ export class FilterPipe implements PipeTransform {
           return true;
      });
   }   else {
-      return collection.filter(item => item[field].includes(value);
+      return collection;
   }
   }
 

@@ -1,78 +1,108 @@
 {
-    "icecream": [{
-            "id": 1,
-            "name": "vannila",
-            "ratePerUnit": 45.00,
-            "image": "assets/images/vannila.jpg"
-        },
-        {
-            "id": 2,
-            "name": "Butter scotch",
-            "ratePerUnit": 75.00,
-            "image": "assets/images/butterscoth.jpg"
-        }
-
-    ],
-    "southIndian": [
-        { "id": 200, "name": "idly", "ratePerUnit": 23.00, "image": "southindian/idly.jpg" }
-    ],
-    "northIndian": [{
-        "id": 300,
-        "name": "parantha",
-        "ratePerUnit": 33.00,
-        "image": "northindian/parantha.jpg"
-
-
-    }],
-    "restaurant": [{
-            "id": 400,
-            "name": "Karachi Bakery",
-            "description": "Traditional Restaraunt",
-            "cuisine": "Multi Cuisine",
-            "photo": "assets/images/karchi.jpg",
-            "priceLevel": "budget",
-            "owner_email": "abc@gmail.com"
-        }
-
-    ],
-    "order": [{
-        "id": 500,
-        "mobileNumber": 9404040,
-        "firstname": "Ramesh",
-        "address": "Chennai",
-        "meals": ["pasta", "burger", "coke"],
-        "amount": 450.00,
-        "delivered": true
-    }],
-    "myorders": [{
-            "id": 600,
-            "date": "2018-08-20",
-            "value": 450.00,
-            "type": "breakfast"
-        },
-        {
-            "id": 601,
-            "date": "2018-08-22",
-            "value": 1450.00,
-            "type": "lunch"
-        },
-        {
-            "id": 602,
-            "date": "2018-08-20",
-            "value": 50.00,
-            "type": "breakfast"
-        },
-        {
-            "id": 603,
-            "date": "2018-08-25",
-            "value": 450.00,
-            "type": "lunch"
-        },
-        {
-            "id": 604,
-            "date": "2018-08-24",
-            "value": 1450.00,
-            "type": "dinner"
-        }        
-    ]
+  "icecream": [
+    {
+      "id": 1,
+      "name": "vannila",
+      "ratePerUnit": 45,
+      "image": "assets/images/vannila.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Butter scotch",
+      "ratePerUnit": 75,
+      "image": "assets/images/butterscoth.jpg"
+    }
+  ],
+  "southIndian": [
+    {
+      "id": 200,
+      "name": "idly",
+      "ratePerUnit": 23,
+      "image": "southindian/idly.jpg"
+    }
+  ],
+  "northIndian": [
+    {
+      "id": 300,
+      "name": "parantha",
+      "ratePerUnit": 33,
+      "image": "northindian/parantha.jpg"
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 400,
+      "name": "Karachi Bakery",
+      "description": "Traditional Restaraunt",
+      "cuisine": "Multi Cuisine",
+      "photo": "assets/images/karchi.jpg",
+      "priceLevel": "budget",
+      "owner_email": "abc@gmail.com"
+    },
+    {
+      "id": "401",
+      "name": "Krishnam",
+      "description": "What a restaurant",
+      "cuisine": "Continental",
+      "photo": "jafa.jpg",
+      "priceLevel": "Unlimited",
+      "owner_email": "kshsh@gmail.com"
+    },
+    {
+      "id": "4001",
+      "name": "Karachi Bakery",
+      "description": "Traditional Restaraunt",
+      "cuisine": "What is multi Cusine",
+      "photo": "assets/images/karchi.jpg",
+      "priceLevel": "budget11111",
+      "owner_email": "abc@gmail.com"
+    }
+  ],
+  "order": [
+    {
+      "id": 500,
+      "mobileNumber": 9404040,
+      "firstname": "Ramesh",
+      "address": "Chennai",
+      "meals": [
+        "pasta",
+        "burger",
+        "coke"
+      ],
+      "amount": 450,
+      "delivered": true
+    }
+  ],
+  "myorders": [
+    {
+      "id": 600,
+      "date": "2018-08-20",
+      "value": 450,
+      "type": "breakfast"
+    },
+    {
+      "id": 601,
+      "date": "2018-08-22",
+      "value": 1450,
+      "type": "lunch"
+    },
+    {
+      "id": 602,
+      "date": "2018-08-20",
+      "value": 50,
+      "type": "breakfast"
+    },
+    {
+      "id": 603,
+      "date": "2018-08-25",
+      "value": 450,
+      "type": "lunch"
+    },
+    {
+      "id": 604,
+      "date": "2018-08-24",
+      "value": 1450,
+      "type": "dinner"
+    }
+  ]
 }
