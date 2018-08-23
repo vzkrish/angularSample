@@ -1,0 +1,70 @@
+<!-- <p>
+  login works!
+</p>
+
+<!-- <form #frm='ngForm' (ngSubmit)='submit(frm.value)' class="form-inline">
+  <div  class="form-control"><label for="">User Name</label><input type="text" name='userName' [(ngModel)]='user.userName'></div>
+  <div  class="form-control"><label for="">Role</label><input type="text" name='role' [(ngModel)]='user.role'></div>
+  <div  class="form-check"> <label for="">Pass Word</label><input class="btn btn-primary" type="password" name='pwd' [(ngModel)]='user.pwd'></div>
+</form> -->
+
+
+<!-- <form #frm='ngForm' (ngSubmit)='submit(frm.value)' >
+  <label for="email">User Name:</label>
+  <input type="text" name='userName' [(ngModel)]='user.userName'>
+  <label for="role">Role:</label>
+  <input type="text" name='role' [(ngModel)]='user.role'>
+  <label for="pwd">Password:</label>
+  <input type="password" name='pwd' [(ngModel)]='user.pwd'class="form-control" >
+  <!-- <div class="form-check">
+    <label class="form-check-label">
+      <input class="form-check-input" type="checkbox"> Remember me
+    </label>
+  </div> -->
+  <!-- <button type="submit" class="btn btn-primary">Submit</button>
+</form> --> 
+
+
+
+
+<div class="container">
+    <h1 class="form-heading">login Form</h1>
+    <div class="login-form">
+    <div class="main-div">
+        <div class="panel">
+       
+          
+       <p>Please enter your login and password</p>
+       </div>
+        <form #frm='ngForm' (ngSubmit)='submit(frm.value)'>
+    
+            <div class="form-group">
+    
+    
+                <input type="text" class="form-control" placeholder="User Name" name='userName' [(ngModel)]='user.userName'>
+    
+            </div>
+            <div class="form-group">
+    
+    
+                <input type="text" class="form-control" placeholder="Your Role" name='role' [(ngModel)]='user.role'>
+    
+            </div>
+    
+            <div class="form-group">
+               
+              
+                <input type="password" class="form-control" name='pwd' [(ngModel)]='user.pwd' placeholder="Password">
+    
+            </div>
+  
+            
+            <button type="submit" value='login' class="btn btn-primary">Login</button>
+    
+        </form>
+        </div>
+
+        {{user|json}}
+
+
+        

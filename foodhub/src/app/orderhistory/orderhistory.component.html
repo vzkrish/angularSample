@@ -1,7 +1,17 @@
-<p>
-  orderhistory works!
-</p>
-
+<!-- <div class="input-group">
+    <div class="input-group-prepend">
+      <span class="input-group-text">Search</span>
+    </div>
+    <input type="Search" [(ngModel)]="searchCon" class="form-control mr-sm-2 col-2" > 
+  </div> -->
+  <div class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <input class="form-control mr-sm-3" type="Search" [(ngModel)]="searchId" placeholder="Search Id">
+      <input class="form-control mr-sm-3" type="Search" [(ngModel)]="searchDate" placeholder="Search Date">
+      <input class="form-control mr-sm-3" type="Search" [(ngModel)]="searchValue" placeholder="Search Amount">       
+        <input class="form-control mr-sm-3" type="Search" [(ngModel)]="searchCon" placeholder="Search Type">
+        <!-- <button class="btn btn-success" type="submit">Search</button> -->
+  
+    </div>
 <table class="table table-dark table-striped">
     <thead>
     <tr>
@@ -12,12 +22,13 @@
     </tr>
   </thead>
   <tbody >
-    <tr *ngFor='let eachOrder of orderHistory'>
+    <tr *ngFor= "let eachOrder of orderHistory | filter : searchId:searchDate:searchValue:searchCon" >
       <td>{{eachOrder.id}}</td>
-      <td>{{eachOrder.date | date:'year'}}</td>
+      <td>{{eachOrder.date | date:'longDate'}}</td>
       <td>{{eachOrder.value | currency:'INR':'symbol'}}</td>
       <td>{{eachOrder.type | uppercase}}</td>
     </tr>
     
   </tbody>
 </table>
+

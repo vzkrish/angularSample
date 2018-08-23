@@ -18,6 +18,9 @@ import { SiblingComponent } from './sibling/sibling.component';
 import { HighlightDirective } from './highlight.directive';
 import { DetailsComponent } from './details/details.component';
 import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
+import { FilterPipe } from './filter.pipe';
+import { LoginComponent } from './login/login.component';
+import { RestaurantComponent } from './restaurant/restaurant.component';
 
 
 @NgModule({
@@ -35,7 +38,10 @@ import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
     SiblingComponent,
     HighlightDirective,
     DetailsComponent,
-    OrderhistoryComponent
+    OrderhistoryComponent,
+    FilterPipe,
+    LoginComponent,
+    RestaurantComponent
   ],
   imports: [
     BrowserModule,
