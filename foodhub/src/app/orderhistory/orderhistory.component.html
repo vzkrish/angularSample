@@ -14,7 +14,7 @@
   <tbody >
     <tr *ngFor='let eachOrder of orderHistory'>
       <td>{{eachOrder.id}}</td>
-      <td>{{eachOrder.date}}</td>
+      <td>{{eachOrder.date | date:'year'}}</td>
       <td>{{eachOrder.value | currency:'INR':'symbol'}}</td>
       <td>{{eachOrder.type | uppercase}}</td>
     </tr>
