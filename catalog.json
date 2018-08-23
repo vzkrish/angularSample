@@ -1,0 +1,16 @@
+{
+    "icecream": [
+        {
+            "id":1,
+            "name":"Vannila",
+            "ratePerUnit":45.00,
+            "img":"icecream/vannila.jpg"
+        },
+        {
+            "id":2,
+            "name":"ButterScoth",
+            "ratePerUnit":55.00,
+            "img":"icecream/ButterScoth.jpg"
+        }        
+    ]
+}
