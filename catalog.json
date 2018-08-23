@@ -1,16 +1,66 @@
 {
-    "icecream": [
-        {
-            "id":1,
-            "name":"Vannila",
-            "ratePerUnit":45.00,
-            "img":"icecream/vannila.jpg"
+    "icecream": [{
+            "id": 1,
+            "name": "vannila",
+            "ratePerUnit": 45.00,
+            "image": "assets/images/vannila.jpg"
         },
         {
-            "id":2,
-            "name":"ButterScoth",
-            "ratePerUnit":55.00,
-            "img":"icecream/ButterScoth.jpg"
-        }        
+            "id": 2,
+            "name": "Butter scotch",
+            "ratePerUnit": 75.00,
+            "image": "assets/images/butterscoth.jpg"
+        }
+
+    ],
+    "southIndian": [
+        { "id": 200, "name": "idly", "ratePerUnit": 23.00, "image": "southindian/idly.jpg" }
+    ],
+    "northIndian": [{
+        "id": 300,
+        "name": "parantha",
+        "ratePerUnit": 33.00,
+        "image": "northindian/parantha.jpg"
+
+
+    }],
+    "restaurant": [{
+            "id": 400,
+            "name": "Karachi Bakery",
+            "description": "Traditional Restaraunt",
+            "cuisine": "Multi Cuisine",
+            "photo": "assets/images/karchi.jpg",
+            "priceLevel": "budget",
+            "owner_email": "abc@gmail.com"
+        }
+
+    ],
+    "order": [{
+        "id": 500,
+        "mobileNumber": 9404040,
+        "firstname": "Ramesh",
+        "address": "Chennai",
+        "meals": ["pasta", "burger", "coke"],
+        "amount": 450.00,
+        "delivered": true
+    }],
+    "myorders": [{
+            "id": 600,
+            "date": "2018-08-20",
+            "value": 450.00,
+            "type": "breakfast"
+        },
+        {
+            "id": 601,
+            "date": "2018-08-22",
+            "value": 1450.00,
+            "type": "lunch"
+        },
+        {
+            "id": 602,
+            "date": "2018-08-22",
+            "value": 450.00,
+            "type": "breakfast"
+        }
     ]
 }

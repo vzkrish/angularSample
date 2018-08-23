@@ -1,9 +1,10 @@
-<div class="card-deck">
+<div class="card-deck" >
   <div *ngFor="let eachItem of trendinglist" class="card">
-    <div class="card-img">
-      <img src="{{eachItem.image}}" alt="logo"></div>
+    <div  class="card-body">
+      <img class="card-img-top" src="{{eachItem.image}}" alt="logo"></div>
     <div class="card-body">{{eachItem.name}}</div>
     <div class="card-body">{{eachItem.rating}}</div>
     <div class="card-body">{{eachItem.id}}</div>
   </div>
 </div>
+

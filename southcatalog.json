@@ -1,0 +1,16 @@
+{
+    "southindian": [
+        {
+            "id":200,
+            "name":"idly",
+            "ratePerUnit":25.00,
+            "img":"assets/images/kara.jpg"
+        },
+        {
+            "id":300,
+            "name":"dosa",
+            "ratePerUnit":35.00,
+            "img":"assets/images/biryani.jpg"
+        }        
+    ]
+}

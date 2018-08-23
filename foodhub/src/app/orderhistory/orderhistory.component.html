@@ -1,0 +1,23 @@
+<p>
+  orderhistory works!
+</p>
+
+<table class="table table-dark table-striped">
+    <thead>
+    <tr>
+      <th>Order Number</th>
+      <th>Order Date</th>
+      <th>Order Value</th>
+      <th>Order Type</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor='let eachOrder of orderHistory'>
+      <td>{{eachOrder.id}}</td>
+      <td>{{eachOrder.date}}</td>
+      <td>{{eachOrder.value | currency:'INR':'symbol'}}</td>
+      <td>{{eachOrder.type | uppercase}}</td>
+    </tr>
+    
+  </tbody>
+</table>

@@ -1,0 +1,11 @@
+<div class="card-deck">
+  <div *ngFor="let eachItem of southListAPI" class="card">
+    <div class="card-img">
+      <img src="{{eachItem.img}}" alt="logo"></div>
+    <div class="card-body">{{eachItem.id}}</div>
+    <div class="card-body">{{eachItem.name}}</div>
+    <div class="card-body">{{eachItem.ratePerUnit}}</div>
+  </div>
+</div>
+
+{{southListAPI|json}}
