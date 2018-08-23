@@ -14,6 +14,7 @@ export class RestaurantComponent implements OnInit {
   showForm = false;
   HideButton = true;
   editMode = false;
+  pos: any;
   constructor(private builder: FormBuilder, private service: CatalogAPIService,private getservice: CatalogAPIService) {  }
 
   frmContent = {
@@ -34,10 +35,13 @@ export class RestaurantComponent implements OnInit {
   console.log(this.restForm.value);
   if (this.editMode) {
     this.service.updateRestaurant(this.restForm.value).subscribe
-    (resp => console.log(resp);
-      const pos = this.restinfo.indexOf(resp);
-      this.restinfo.splice(pos,0,resp);
+    (resp => {console.log(resp);
+      this.restinfo.splice(this.pos, 1 , resp);
+      // this.restinfo[this.pos] = resp; 
+    }
     );
+    this.showForm = false;
+    this.HideButton = true;
   } else {
     this.service.addRestaurant(this.restForm.value).
     subscribe(resp => {
@@ -53,15 +57,19 @@ changeFormStatus() {
 }
 edit(val) {
   // To Edit the List of Elements
+  this.pos = this.restinfo.indexOf(val);
   this.showForm = true;
   this.restForm.setValue(val);
   this.editMode = true;
 }
 
 remove(item: any) {
+  this.showForm = false;
+  this.HideButton = true;
  this.service.removeRestaurant(item.id).subscribe(resp => {
   const pos = this.restinfo.indexOf(item);
   this.restinfo.splice(pos, 1); }) ;
+
 }
 
 }
