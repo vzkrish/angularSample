@@ -1,3 +1,21 @@
 <p>
   southfood works!
 </p>
+<!-- <table class="table">
+    <th scope="row"></th>  
+  <tr *ngFor='let eachItem of southMenu' >
+        <td><a [routerLink]="['/food/south/showItems',eachItem.code]"> <img [src]='eachItem.type' alt=""></a></td>
+    </tr>
+</table> -->
+<router-outlet></router-outlet>
+
+<table class="table table-bordered">
+     <tbody>
+        <tr>
+        <td *ngFor='let eachItem of southMenu'>
+          <a [routerLink]="['/food/south/showItems',eachItem.code]"> <img [src]='eachItem.type' alt=""></a>
+        </td>
+      </tr>
+      
+    </tbody>
+  </table>

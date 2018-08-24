@@ -8,6 +8,7 @@ import { UniversalGuard } from './universal.guard';
 import { FoodComponent } from './food/food.component';
 import { SouthfoodComponent } from './southfood/southfood.component';
 import { NorthfoodComponent } from './northfood/northfood.component';
+import {ShowmenuComponent} from './showmenu/showmenu.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -17,7 +18,7 @@ const routes: Routes = [
   {path: 'history', component: OrderhistoryComponent, canActivate: [UniversalGuard]},
   {path: 'trending', component: TrendingComponent},
   {path: 'food', component: FoodComponent, children:
-  [ {path: 'south', component: SouthfoodComponent},
+  [ {path: 'south', component: SouthfoodComponent, children: [{path: 'showItems/:item', component: ShowmenuComponent }]},
     {path: 'north', component: NorthfoodComponent}]
  },
   {path: '**', component: LoginComponent}
