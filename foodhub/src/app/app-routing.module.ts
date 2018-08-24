@@ -9,6 +9,7 @@ import { UniversalGuard } from './universal.guard';
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
+  {path: 'login/:next', component: LoginComponent},
   {path: 'hotels', component: RestaurantComponent},
   {path: 'history', component: OrderhistoryComponent, canActivate: [UniversalGuard]},
   {path: 'trending', component: TrendingComponent},
