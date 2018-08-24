@@ -5,6 +5,9 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
 import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
 import { TrendingComponent } from './trending/trending.component';
 import { UniversalGuard } from './universal.guard';
+import { FoodComponent } from './food/food.component';
+import { SouthfoodComponent } from './southfood/southfood.component';
+import { NorthfoodComponent } from './northfood/northfood.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -13,6 +16,10 @@ const routes: Routes = [
   {path: 'hotels', component: RestaurantComponent},
   {path: 'history', component: OrderhistoryComponent, canActivate: [UniversalGuard]},
   {path: 'trending', component: TrendingComponent},
+  {path: 'food', component: FoodComponent, children:
+  [ {path: 'south', component: SouthfoodComponent},
+    {path: 'north', component: NorthfoodComponent}]
+ },
   {path: '**', component: LoginComponent}
 ];
 

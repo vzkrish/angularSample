@@ -22,6 +22,9 @@ import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { SouthfoodComponent } from './southfood/southfood.component';
+import { NorthfoodComponent } from './northfood/northfood.component';
+import { FoodComponent } from './food/food.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import {NgxPaginationModule} from 'ngx-pagination';
     OrderhistoryComponent,
     FilterPipe,
     LoginComponent,
-    RestaurantComponent
+    RestaurantComponent,
+    SouthfoodComponent,
+    NorthfoodComponent,
+    FoodComponent
   ],
   imports: [
     BrowserModule,
