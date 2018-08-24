@@ -21,7 +21,7 @@ import { OrderhistoryComponent } from './orderhistory/orderhistory.component';
 import { FilterPipe } from './filter.pipe';
 import { LoginComponent } from './login/login.component';
 import { RestaurantComponent } from './restaurant/restaurant.component';
-
+import {NgxPaginationModule} from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,7 @@ import { RestaurantComponent } from './restaurant/restaurant.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule
+    AppRoutingModule, HttpClientModule, FormsModule, ReactiveFormsModule, NgxPaginationModule
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent],

@@ -22,7 +22,7 @@
     </tr>
   </thead>
   <tbody >
-    <tr *ngFor= "let eachOrder of orderHistory | filter : searchId:searchDate:searchValue:searchCon" >
+    <tr *ngFor= "let eachOrder of orderHistory | paginate:{itemsPerPage:3,currentPage:p}" >
       <td>{{eachOrder.id}}</td>
       <td>{{eachOrder.date | date:'longDate'}}</td>
       <td>{{eachOrder.value | currency:'INR':'symbol'}}</td>
@@ -31,4 +31,5 @@
     
   </tbody>
 </table>
+<pagination-controls class="pagination-small" (pageChange)="p=$event"></pagination-controls>
 
