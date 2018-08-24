@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Navlink } from '../navlink';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,14 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   mainTitle = 'Welcome to Food Hub';
 
-  pageHeadLinks = ['Restuarant','Order','TrackOrder'];
+  pageHeadLinksOld = ['Restuarant', 'Order', 'TrackOrder'];
+
+  pageHeadLinks: Navlink[] = [
+    {link: '/login', text: 'Home'} ,
+    {link: '/hotels', text: 'Hotels'} ,
+    {link: '/history', text: 'My Orders'} ,
+    {link: '/register', text: 'Register'},
+    {link: '/trending', text: 'Trending'}  ] ;
   constructor() { }
 
   ngOnInit() {

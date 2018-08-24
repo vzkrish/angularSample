@@ -4,10 +4,12 @@
   
   <ul *ngFor = 'let eachlink of links' class="navbar-nav">
     <li class="nav-item"> 
-      <a class="nav-link" href='#'>{{eachlink}}</a>
+      <!-- <a class="nav-link" href='#'>{{eachlink}}</a> -->
+      <a class="nav-link" [routerLink]="[eachlink.link]" href='#'>{{eachlink.text}}</a>
     </li>
   </ul>
 
 </nav>
+
 
 
