@@ -18,6 +18,7 @@ export class LoginComponent implements OnInit {
   }
   submit(value)  {
     console.log(value);
+    sessionStorage.setItem('userLogged', 'true');
   }
 
 }
