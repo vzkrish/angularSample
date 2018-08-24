@@ -12,12 +12,12 @@ export class OrderComponent implements OnInit {
 
   ngOnInit() {
   }
+
   submit()  {
-    if(this.item.length !== 0)    {
+    if (this.item.length !== 0)    {
     this.itemList.push(this.item);
     this.item = '';
     }
-   
   }
   clear()   {
     this.itemList.pop();

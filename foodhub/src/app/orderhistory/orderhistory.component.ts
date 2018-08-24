@@ -9,6 +9,7 @@ import { OrderInterface } from '../order-interface';
 })
 export class OrderhistoryComponent implements OnInit {
   orderHistory: OrderInterface[];
+  p: any;
   searchCon = '';
   constructor(private service: CatalogAPIService) { }
 
